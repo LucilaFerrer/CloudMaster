@@ -94,11 +94,8 @@ div {
 .div-tabla{
     display:  table;
     width:auto;
-    /* background-color:#eee; */
     border:1px solid  #666666;
-    border-spacing:5px;/*cellspacing:poor IE support for  this*/
-   /* border-collapse:separate;*/
- 
+    border-spacing:5px;
 }
 .div-header{
     display:table-row;
@@ -110,7 +107,7 @@ div {
    width:auto;
 }
 .div-celda{
-    float:left;/*fix for  buggy browsers*/
+    float:left;
     display:table-column;
     width: 200px;
     font-weight: bold;
