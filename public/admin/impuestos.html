@@ -1,23 +1,43 @@
 <html>
     <head>
-        <link href="../estilos.css" rel="stylesheet" type="text/css">
+        <title>Perfil de Administrador</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../css-general/general.css">
+        <link rel="stylesheet" href="../css-general/estilos.css">
+        <script src="https://kit.fontawesome.com/1d06bc87b2.js" crossorigin="anonymous"></script>
+        <script src="../js/menu.js"></script>
     </head>
+
     <body>
-        <div class="header">
-            <div class="flex-izq">
-                <a href="#"><img class="imagen" src="../imagenes/logo.jpg"></a>
+        <header>
+            <div class="header">
+                <div class="flex-izq">
+                    <a href="#"><img class="imagen" src="../imgs/logo.jpg"></a>
+                </div>
+                <div class="flex-der">
+                    <a href="../Home/home.html"><span class="material-icons">home</span></a>
+                    <a href="#"><span class="material-icons">menu_book</span></a>
+                    <a href="../favorito/favorito.html"><span class="material-icons">star</span></a>
+                    <a href="../carritoCompras/carritoCompras.html"><span class="material-icons">shopping_bag</span></a>
+                    <a href="../landingEquipo/"><span class="material-icons">logout</span></a>
+                </div>
             </div>
-            <div class="flex-der">
-                <a href="#"><img class="imagen-iconos" src="../imagenes/home-outline.png"></a>
-                <a href="#"><img class="imagen-iconos" src="../imagenes/book-outline.png"></a>
-                <a href="#"><img class="imagen-iconos" src="../imagenes/star-outline.png"></a>
-                <a href="#"><img class="imagen-iconos" src="../imagenes/bag-handle-outline.png"></a>
-                <a href="#"><img class="imagen-iconos" src="../imagenes/log-in-outline.png"></a>
+            <div id="barraNav">
+                <div id="barraLateral">
+                    <a class="closebtn" onclick="closeNav()">×</a>
+                    <a href="../perfilCliente/modificarPerfil/modificarPerfil.html">Modificar perfil </a>
+                    <a href="../perfilCliente/tarjeta/tarjeta.html">Tarjetas</a>
+                    <a href="../perfilCliente/solicitudClienteFrecuente/solicitudClienteFrecuente.html">Solicitud cliente frecuente</a>
+                    <a href="../perfilCliente/historialCompras/historialCompras.html">Historial de compras</a>
+                </div>
+                <div id="opcionesBarraNav">
+                    <button class="openbtn" onclick="openNav()">☰</button>
+                </div>
             </div>
-        </div>
+        </header>
 <!-- El contenido va acá -->
         <div class="contenedor-texto">
             <div class="flex-texto">
@@ -25,32 +45,34 @@
                 <form action="/action_page.php" method="post">
                     <label for="impuesto">Impuesto (%):</label><br>
                     <input type="text" id="impuesto" name="impuesto" value="13"><br>
-                    <input type="submit" value="Enviar">
+                    <input class="boton3" type="submit" value="Enviar">
                 </form>
             </div>
         </div>
 
-        <div class="footer">
-            <div class="flex1">
-                <p class="texto">CORREO ELECTRÓNICO</p>
-                <p>libreria@libreriaonline.com</p>
-                <p class="texto">Teléfono</p>
-                <p>libreria@libreriaonline.com</p>
-                <p class="texto">MENSAJE</p>
-                <textarea class="caja" name="texto" rows="4" cols="40" >Escriba el mensaje</textarea>
-                <input class="boton" type="submit" value="Enviar">
+    <!-- Footer -->
+    <div class="footer">
+        <div class="flex1">
+            <p class="texto">CORREO ELECTRÓNICO</p>
+            <p>libreria@libreriaonline.com</p>
+            <p class="texto">Teléfono</p>
+            <p>8888-8888</p>
+            <p class="texto">MENSAJE</p>
+            <textarea class="caja" name="texto" rows="4" cols="40" placeholder="Escriba el mensaje"></textarea>
+            <input class="boton" type="submit" value="Enviar">
 
-            </div>
-            <div class="flex2">
-                <p class="texto">POLÍTICAS</p>
-                <p>Terminos y condicones de compra</p>
-                <p>Política de privacidad</p>
-                
-            </div>
-            <div class="flex3">
-                <a href="#"><img class="imagen-iconos" src="../imagenes/logo-facebook.png"></a></br></br>
-                <a href="#"><img class="imagen-iconos" src="../imagenes/logo-tumblr.png"></a>
-            </div>
         </div>
+        <div class="flex2">
+            <p class="texto">POLÍTICAS</p>
+            <p>Terminos y condicones de compra</p>
+            <p>Política de privacidad</p>
+
+        </div>
+        <div class="flex3">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </br></br>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
     </body>
 </html>
